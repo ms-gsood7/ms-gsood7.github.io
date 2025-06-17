@@ -1,39 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile-style.css">
-    <title>My Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geetika's Portfolio</title>
+  <link rel="stylesheet" href="profile-style.css" />
+ <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"  rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
-    <h1>Geetika Sood</h1>
-    <p><strong>Email:</strong> gtksood@gmail.com</p>
-    <p><strong>Phone:</strong> 3125224908 </p>
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>Data Engineer</strong> - Dublin City University (2022-2024)</li>
-        <li><strong>Data Engineer</strong> - Infosys Ltd. (2017-2021)</li>
-    </ul>
-    <h2>Education</h2>
-    <ul>
-        <li><strong>M. Sc. in Computing (Data Analytics)</strong> - Dublin City University (2021-2022)</li>
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-    </ul>
+<body> 
+  <!-- Shrinking sticky header -->
+  <header id="sticky-header">
+  <div class="header-content">
+    <a href="#" class="site-title fa fa-home"  style="font-size:24px" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"> Geetika Sood</span>
+    </a></div></header>
+
+  <!-- Hero banner -->
+  <div id="hero-banner">
+    <div>
+    <h1 class="hero-title">Hi! I'm Geetika</h1>
+    <hr>
+    <h2 class="hero-subheading">Building and Vizualizing Human Centric Data Solutions</h2>
+  </div></div>
+
+  
+    <div class="container">
+      <nav class="sidebar">
+      </br>
+      <nav class="scroll">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!--<li><a href="#projects">Projects</a></li>-->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav></nav>
+    <main class="content">
+      <!--<section class="intro">
+        <h3>Building and Vizualizing Human Centric Data Solutions</h3>
+      </section> --> 
+      <section id="work" class="section">
+        <h3>Work History</h3>
+        <div class="projects">
+          <div class="project"><a href="work1.html" class="page-link">Research Data Engineer and Analyst</a></div>
+          <div class="project"><a href="work2.html" class="page-link">Data Engineer</a></div>
+        </div></section>
+
+        <section id="work" class="section">
+        <div class="projects">
+          <div class="project"><a href="proj1.html" class="page-link">Generating energy with footsteps</a></div>
+       
+         
+          <div class="project"><a href="proj2.html" class="page-link">Weather App</a></div>
+       
+          <div class="project"><a href="proj3.html" class="page-link">Data Cleaning and EDA</a></div>
+        
+      </section>
+
+      <section id="about" class="section">
+        
+        <p> 
+      Hi, I'm Geetika - a Data Analyst and Engineer based in the US, with 5+ years of experience transforming raw data into clear, actionable insights. I specialize in SQL, Python, Tableau, and automating data workflows to reduce reporting effort and improve business decisions.
+
+      </br>I've built dashboards and reporting systems for healthcare, public sector, and enterprise clients. Whether you need help building a scalable ETL process, cleaning a messy dataset, or telling a compelling story through Tableau, I bring the structure and clarity your data needs.
+
+      </br></br><p class="details" style="text-align: left;">✳️Tools I use: PostgreSQL, Python (Pandas), Tableau, Power BI, Airflow</p>
+      </br><p class="details" style="text-align: left;">✳️ What I offer: Data cleaning, pipeline automation, dashboarding, KPI reporting, stakeholder-ready insights</p>
+      </br><p class="details" style="text-align: left;">✳️ Time zone: Flexible — available EST hours</p>
+      </p>
+      </section>
+      
+      <section id="publications" class="section">
+      <h3>Publications</h3>
+      <div class="publication-buttons">
+        <a href="./resources/aics2024_p30.pdf" target="_blank" class="button">Exploring Chronic Disease Trends among Adults in the USA: A Statistical Analysis with Visual Insights</a>
+        <a href="./resources/Query_Based_Construction_of_Chronic_Disease_Datase.pdf" target="_blank" class="button">Query Based Construction of Chronic Disease Datasets</a>
+        <a href="https://www.insight-centre.org/ai-for-good-building-digital-healthcare-assets-for-sustainable-healthcare/" target="_blank" class="button">AI for Good</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+        <span>Python</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" alt="Pandas" />
+        <span>Pandas</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySql" />
+        <span>MySql</span>
+      </div>
+      <div class="skill">
+        <img src="./resources/tableau-icon-svgrepo-com.svg" alt="Tableau" />
+        <span>Tableau</span>
+      </div>
+      </div>
+      <div class="skills-grid">
+
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="GitHub" />
+        <span>Git</span>
+      </div>
+      <div class="skill">        
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="jira" />
+        <span>Jira</span>
+      </div>
+      <div class="skill">        
+          <img src="./resources/snowflake_icon.png" alt="Snowflake" />
+        <span>Snowflake</br> Certification</span>
+      </div>
+    
+      <div class="skill">        
+          <img src="./resources/Microsoft-Power-BI.png" alt="PowerBI" />
+        <span>PowerBI</span>
+      </div>  </div>  </section>
+
+    <section id="resume" class="section">
+      <h3>Resume</h3>
+        <p>Download or view my latest resume here.</p>
+        <a href="./resources/Geetika Sood Resume DE.pdf" target="_blank" class="button">View Resume</a>
+    </section>
+
+   
+<section id="contact" class="section" >
+    <h3>Get In Touch!</h3>
+    <div class="social-icons" style="margin-top: 2rem;">
+      <a href="https://github.com/ms-gsood7" target="_blank" rel="noopener" style="margin: 0 1rem; font-size: 2rem; color: #333;">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/geetika-sood-07/" target="_blank" rel="noopener" style="margin: 0 1rem; font-size: 2rem; color: #0e76a8;">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="mailto:gtksood@gmail.com" style="margin: 0 1rem; font-size: 2rem; color: #c23a2b;">
+        <i class="fa fa-envelope-o"></i>
+      </a>
+    </div>
+  </div>
+</section>
+ </div>
+</main>
+
+
+<script>
+  const headerImg = document.querySelector('#hero-header img');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const fadePoint = 300; // adjust based on banner height
+    const opacity = Math.max(0, 1 - scrollTop / fadePoint);
+    const scale = Math.max(0.95, 1 - scrollTop / 2000); // slight zoom-out
+
+    headerImg.style.opacity = opacity;
+    headerImg.style.transform = `scale(${scale})`;
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  document.querySelectorAll('a.page-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      document.body.classList.remove('loaded'); // fade out
+      setTimeout(() => window.location.href = href, 300); // delay nav
+    });
+  });
+</script>
 </body>
+
 </html>

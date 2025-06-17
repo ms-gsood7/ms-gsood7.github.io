@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Data Pipeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes pulseArrow {
+      0% { transform: translateX(0); opacity: 0.5; }
+      50% { transform: translateX(10px); opacity: 1; }
+      100% { transform: translateX(0); opacity: 0.5; }
+    }
+
+    .arrow-animate {
+      animation: pulseArrow 1.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-10 font-sans">
+
+  <h1 class="text-3xl font-bold text-center mb-10">Animated Data Pipeline</h1>
+
+  <div class="flex flex-wrap justify-center items-center gap-6">
+
+    <!-- Step 1 -->
+    <div class="text-center">
+      <div class="w-24 h-24 bg-blue-500 text-white flex items-center justify-center rounded-full text-sm shadow-lg">
+        Raw Data
+      </div>
+      <p class="mt-2 text-gray-700 text-sm">CSV / API</p>
+    </div>
+
+    <!-- Arrow -->
+    <div class="text-3xl text-gray-600 arrow-animate">➜</div>
+
+    <!-- Step 2 -->
+    <div class="text-center">
+      <div class="w-24 h-24 bg-yellow-500 text-white flex items-center justify-center rounded-full text-sm shadow-lg">
+        Transform
+      </div>
+      <p class="mt-2 text-gray-700 text-sm">Python / Airflow</p>
+    </div>
+
+    <!-- Arrow -->
+    <div class="text-3xl text-gray-600 arrow-animate">➜</div>
+
+    <!-- Step 3 -->
+    <div class="text-center">
+      <div class="w-24 h-24 bg-green-500 text-white flex items-center justify-center rounded-full text-sm shadow-lg">
+        Data Lake
+      </div>
+      <p class="mt-2 text-gray-700 text-sm">S3 / PostgreSQL</p>
+    </div>
+
+    <!-- Arrow -->
+    <div class="text-3xl text-gray-600 arrow-animate">➜</div>
+
+    <!-- Step 4 -->
+    <div class="text-center">
+      <div class="w-24 h-24 bg-purple-600 text-white flex items-center justify-center rounded-full text-sm shadow-lg">
+        Dashboard
+      </div>
+      <p class="mt-2 text-gray-700 text-sm">Power BI</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
