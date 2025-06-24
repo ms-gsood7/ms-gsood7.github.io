@@ -14,7 +14,7 @@
   <!-- Shrinking sticky header -->
   <header id="sticky-header">
   <div class="header-content">
-    <a href="#" class="site-title fa fa-home"  style="font-size:24px" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"> Geetika Sood</span>
+    <a href="#" style="font-size:24px" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"> Geetika Sood</span>
     </a></div></header>
 
   <!-- Hero banner -->
@@ -29,16 +29,15 @@
     <div class="container">
       <nav class="sidebar">
       </br>
-      <nav class="scroll">
       <ul>
         <li><a href="#work">Work</a></li>
+        <li><a href="#portfolio_projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#skills">Skills</a></li>
-        <!--<li><a href="#projects">Projects</a></li>-->
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav></nav>
+   </nav>
     <main class="content">
       <!--<section class="intro">
         <h3>Building and Vizualizing Human Centric Data Solutions</h3>
@@ -50,27 +49,37 @@
           <div class="project"><a href="work2.html" class="page-link">Data Engineer</a></div>
         </div></section>
 
-        <section id="work" class="section">
+        <section id="portfolio_projects" class="section">
+        <h3>Projects</h3>
         <div class="projects">
-          <div class="project"><a href="proj1.html" class="page-link">Generating energy with footsteps</a></div>
-       
-         
-          <div class="project"><a href="proj2.html" class="page-link">Weather App</a></div>
-       
-          <div class="project"><a href="proj3.html" class="page-link">Data Cleaning and EDA</a></div>
-        
-      </section>
+          <div>
+            <div class="project"><a href="proj1.html" class="page-link">Generating energy with footsteps</a></div>
+            <br>
+            <h3 style="text-align: center;">Data Analysis & vizualization</h3> 
+            
+            <!--<p>using the sensor based step count data in placed in the city</p>-->
+          </div>
+         <div> 
+          <div class="project"><a href="proj2.html" class="page-link">Chicago's Weather Analysis</a></div><br>
+          <h3 style="text-align: center;">Data Engineering & Time series analysis</h3>
+          <!--<p> of Chicago's weather by building an ETL pipeline and analyzing the dataset</p>  -->  
+        </div>
+        <div><div class="project"><a href="proj3.html" class="page-link">Worldwide Layoff Analysis</a></div><br>
+          <h3 style="text-align: center;">Data Cleaning & Exploratory data analysis </h3>
+          <!--<p> the worldwide layoffs dataset</p>    -->
+          </div>    
+      </div>
+    </section>
 
-      <section id="about" class="section">
-        
+      <section id="about" class="section">   
+        <h3>About Me</h3>     
         <p> 
       Hi, I'm Geetika - a Data Analyst and Engineer based in the US, with 5+ years of experience transforming raw data into clear, actionable insights. I specialize in SQL, Python, Tableau, and automating data workflows to reduce reporting effort and improve business decisions.
+      <br>I've built dashboards and reporting systems for healthcare, public sector, and enterprise clients. Whether you need help building a scalable ETL process, cleaning a messy dataset, or telling a compelling story through Tableau, I bring the structure and clarity your data needs.
 
-      </br>I've built dashboards and reporting systems for healthcare, public sector, and enterprise clients. Whether you need help building a scalable ETL process, cleaning a messy dataset, or telling a compelling story through Tableau, I bring the structure and clarity your data needs.
-
-      </br></br><p class="details" style="text-align: left;">✳️Tools I use: PostgreSQL, Python (Pandas), Tableau, Power BI, Airflow</p>
-      </br><p class="details" style="text-align: left;">✳️ What I offer: Data cleaning, pipeline automation, dashboarding, KPI reporting, stakeholder-ready insights</p>
-      </br><p class="details" style="text-align: left;">✳️ Time zone: Flexible — available EST hours</p>
+      <br><br><p class="details" style="text-align: left;">✳️Tools I use: PostgreSQL, Python (Pandas), SQL, Tableau, Power BI, Airflow, Snowflake</p>
+      <br><p class="details" style="text-align: left;">✳️ What I offer: Data cleaning, pipeline automation, dashboarding, KPI reporting, stakeholder-ready insights</p>
+      <br><p class="details" style="text-align: left;">✳️ Time zone: Flexible — available EST hours</p>
       </p>
       </section>
       
@@ -143,15 +152,13 @@
         <i class="fa fa-envelope-o"></i>
       </a>
     </div>
-  </div>
+  
 </section>
  </div>
 </main>
 
-
 <script>
   const headerImg = document.querySelector('#hero-header img');
-
   window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY;
     const fadePoint = 300; // adjust based on banner height

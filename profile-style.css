@@ -8,7 +8,7 @@
 html, body {
   font-family: 'Helvetica Neue',Helvetica, sans-serif;
   color: #111;
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   height: 100%;
   line-height: 1.6;
 }
@@ -24,7 +24,7 @@ html, body {
 #sticky-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background: white;
+  background: rgb(255, 255, 255);
   height:40px;
   display:flex; align-items:center; justify-content:center;
   box-shadow:0 2px 5px rgba(143, 137, 137, 0.1);
@@ -49,8 +49,7 @@ html, body {
 /* Hero Banner */
 #hero-banner {
   height:40vh;
-  background-image:url('./resources/chicago2.JPG'), 
-  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)); /* Gradient overlay */;
+  background:url('./resources/laptop.jpg');
   background-size:cover;
   background-position:bottom;
   display:flex;
@@ -61,17 +60,17 @@ html, body {
 }
 
 .hero-title {
-  color:white;
+  color:black;
   font-size:3rem;
-  text-shadow:0 2px 6px rgba(0,0,0,0.5);
+  text-shadow:0 2px 6px rgba(255, 254, 254, 0.5);
   transition: font-size 0.3s ease;
 }
 
 .hero-subheading {
   font-size: 1.5rem;
-  color: white;
+  color: black;
   margin-top: 1rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
   text-align: center;
 }
 
@@ -201,7 +200,7 @@ a {
 }
 
 .project {
-  background-color: #f0f0f0;
+  background-color: #c0c0c0;
   padding: 2rem;
   flex: 1 1 calc(33% - 1rem);
   min-width: 200px;
@@ -212,6 +211,9 @@ a {
 .project:hover {
    background-color: rgb(255, 127, 29);
 }
+
+
+
 
 .button {
   display: inline-block;
@@ -279,8 +281,25 @@ a {
     flex-direction: column;
   }
 
+  .hero-title{
+  color:white;
+  font-size:2rem;
+  text-shadow:0 2px 6px rgba(0,0,0,0.5);
+  transition: font-size 0.3s ease;
+  text-align: center;
+  }
+
+  .hero-subheading {
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
   .sidebar {
     position: relative;
+    top: 0px;
     width: 100%;
     height: auto;
     border-right: none;
@@ -320,12 +339,25 @@ a {
     font-size: 2rem;
   }
 
+
+
+  .work {
+    flex: 1 1 100%;
+  }
+
+  .work:hover {
+    background-color: rgb(255, 127, 29);
+  }
+
   .projects {
     flex-direction: column;
   }
 
   .project {
     flex: 1 1 100%;
+  }
+   .project:hover {
+    background-color: rgb(255, 127, 29);
   }
 
   .button {

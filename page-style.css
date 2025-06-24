@@ -82,10 +82,21 @@ body {
 
 .work-text li{
     margin-bottom: 1rem;
-  
-
+  }
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
 }
-
+.contact h3{
+  display: center;
+}
 /* Button styling */
 .button {
   display: inline-block;
